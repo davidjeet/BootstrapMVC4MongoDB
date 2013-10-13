@@ -1,6 +1,9 @@
-﻿@{
+﻿@model MongoDB.Driver.DatabaseStatsResult
+
+@{
     ViewBag.Title = "Index";
 }
 
 <h2>BootstrapMVC4MongoDB Test Index Page!</h2>
 <h3>Currently, the time is: @DateTime.Now.ToLongTimeString()</h3>
+<h3>MongoDB collection count is: @Model.CollectionCount</h3>
